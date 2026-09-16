@@ -13,23 +13,23 @@
 
 import pandas as pd
 df = pd.read_csv("data-.csv")
-# print(df.head())
-# df.info()
+print(df.head())
+df.info()
 
-# print(df.isnull().sum())
-# df = df.fillna(0)
+print(df.isnull().sum())
+df = df.fillna(0)
 
-# ages = df[df['age']>25]
-# print(ages)
+ages = df[df['age']>25]
+print(ages)
 
-# Sales = df[df['sales']>200]
-# print(Sales)
+Sales = df[df['sales']>200]
+print(Sales)
 
-# df['Total'] = df['a'] + df['b']
-# print(df.head())
+df['Total'] = df['a'] + df['b']
+print(df.head())
 
-# res = df.groupby('category')['sales'].sum()
-# print(res)
+res = df.groupby('category')['sales'].sum()
+print(res)
 
 import pandas as pd
 data = [['Tom', 25], ['Krish', 30], ['Anjali', 20], ['Aditya', 18]]
